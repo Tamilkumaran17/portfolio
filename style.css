@@ -125,6 +125,9 @@ nav ul li a:hover::after{
     color: #fff;
     font-family: Franklin Gothic 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.about-col2 p{
+    font-size: 20px;
+}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
