@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+        <title>
+            My Protpolio
+        </title>
+
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/3b108a2933.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Tamizh.png " class="logo">
+                
+                <div style="justify-content: right;" >
+                    <ul id="sidemenu">
+                    
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <!-- <li><a href="#portfolio">Protpolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                   
+                    <i class="fa-solid fa-xmark" onclick=closemenu()></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick=openmenu()></i>
+        </div>
+            </nav>
+            <div class="header">
+                
+                
+                <p>
+                    Front end developer
+                </p>
+                <h1>I'm <span>Tamil</span><br>Kumaran..!</h1>
+                
+            </div>
+        </div>
+        </div>
+<!--------------------------------                about                  --------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col1"><img src="mee.jpg"></div>
+                    
+
+                    <div class="about-col2">
+                        <h1 class="sub-title">About me</h1><br>
+                        <p>
+                            Seeking a challenging internship/full-time position as a Computer Science student to leverage my academic knowledge, technical skills, and passion for innovative solutions, contributing to the growth of the organization while gaining valuable industry experience                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                                
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Problem Solving</span><br> using C++, C, Python, Java, SQL(Basic), MongoDB</li>
+                                <li><span>Data Structures and Algorithm </span><br>Solving efficient and dynamic approach</li>
+                                <li><span>Web development</span><br> using Reactjs | HTML | CSS | javaScript</li>
+                            </ul>
+                        </div>
+                        <!-- <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>UI?UX</span><br> nooo</li>
+                                <li><span>web developer</span><br> nothing</li>
+                                <li><span>app developer</span><br> null</li>
+                            </ul>
+                        </div> -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BE CCE</span><br>Sri Eshwar college of engineering, coimbatore      <br> <B>CGPA :8.2</B></li>
+                                <li><span>HSC</span><br>Chanakya matric.hr.sec.school, Tindivanam       <br> <B>87%</B></li>
+                                <li><span>SSLC</span><br>Chanakya matric.hr.sec.school, Tindivanam       <br> <B>98%</B></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------             -(services) portfolio           --------------------------------------->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My works</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                       <h2>Software</h2>
+                       <p> Developed a range of software applications, including an  <b>Automotive e-commerce web</b> store and a feature-rich <b>chess game</b>, both utilizing the <b>MERN stack</b> (MongoDB, Express.js, React.js, Node.js). The e-commerce platform focuses on providing an attractive and user-friendly interface for customers to browse and purchase automotive products, such as bikes and car accessories. The chess game incorporates intuitive interfaces, user authentication, and an opponent with randomized moves to create an engaging gaming experience. These projects highlight strong skills in front-end and back-end development, ensuring seamless functionality and user interaction.</p> 
+                       <a href="https://github.com/Tamilkumaran17" target="_blank">learn more</a> 
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Hardware</h2>
+                        <p>In addition to Hardware development, created an IoT-based temperature and humidity monitoring system using the ESP8266 microcontroller and DHT11 sensor. The system integrates with Google Sheets for data storage and the Blynk app for real-time visualization and alerts, including email notifications for specific conditions. A buzzer is included to signal high or low threshold alerts, and power consumption was optimized for long-term deployment in various environments. This project showcases expertise in hardware integration, sensor technology, and IoT systems.</p>
+                       <a href="#">learn more</a> 
+                        
+                    </div>
+                     <div>
+                        <i class="fa-regular fa-star"></i>
+                        <h2>Achivement</h2>
+                        <p>Active participant and achiever on competitive programming platforms like <b>LeetCode, CodeChef, and HackerRank,</b> demonstrating strong problem-solving skills and coding proficiency. Additionally, completed certifications from online courses on platforms such as Udemy and NPTEL, covering diverse topics like programming languages, web development. These achievements showcase my commitment to continuous learning, skill enhancement, and proficiency in various domains of computer science and technology.</p>
+                        <a href="https://leetcode.com/tamizh_17/" target="_blank">LeetCode |</a> 
+                        <a href="https://www.codechef.com/users/tamilkumaran" target="_blank">CodeChef |</a> 
+                        <a href="https://www.hackerrank.com/profile/tamizh17" target="_blank">HackerRank |</a> 
+                        <a href="https://drive.google.com/drive/folders/1msI5e0B0iMXV7UxxZLnfZeZFhmmkifP7?usp=sharing" target="_blank">Certifications</a> 
+
+                     </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-------------- ------------                  portfolio             ------------------->
+
+       <!----<div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="work-1.png">
+                    </div>
+                    <div class="work">
+                        <img src="work-2.png">
+                    </div>
+                    <div class="work">
+                        <img src="work-3.png">
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+<!----------------------------                 contect            ------------------------------>
+
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>tamilkumaran1494@gmail.com </p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9025015881</p>
+                        <div class="social-icons">
+                            <a href="https://github.com/Tamilkumaran17" target="_blank" ><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/tamilkumarann/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/profile.php?id=100054766879590" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/____.tamizh.____/#/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://drive.google.com/file/d/1HhJJiOeMWM1L5GXqF9fBVb0qA6XhrMr2/view?usp=sharing" target="_blank"><i class="fa-regular fa-file"></i></i></a>
+                            
+                            
+
+
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet" >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="text" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="2" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                            <span id="msg"></span>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div>
+            <footer>
+                <p>&copy; All rights reserved</p>
+            </footer>
+        </div> -->
+
+
+        <script src="script.js"></script>
+        <!-- <script src="sheet.js"></script> -->
+        
+    </body>
+    
+</html>
