@@ -47,6 +47,7 @@ nav{
 nav ul{
     /* border: 2px solid; */
     padding: 0;
+    margin-top: -10px;
     margin-bottom:60px ;
     
 }
@@ -76,11 +77,12 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background-color: #cb1d29;
+    background-color: #2a71f5;
     position:absolute;
     left: 0;
-    bottom: -6px;
+    bottom: -4px;
     transition: 0.5s;
+    border-radius: 6px;
 
 }
 nav ul li a:hover::after{
@@ -96,9 +98,8 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header h1 span{
-    color: #cb1d29
-    
-    ;
+    /* color: #cb1d29; */
+    color: #2a71f5;
 }
 
 /* -------------about----------------*/
@@ -160,22 +161,24 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #cb1d29;
+    background: #0359f9;
     position: absolute;
     left: 0;
     bottom: -8px;
     transition: 0.5s;
+    border-radius: 6px;
+
 
 }
 .tab-links.active-link::after{
-    width: 50%;
+    width: 70%;
 }
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #d82834;
+    color: #2d69da;
     font-size: 16px;
     font-weight: 600;
 }
@@ -238,7 +241,7 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #911F27;
+    background: #2a71f5;
     transform: translateY(-10px);
 }
 
@@ -266,10 +269,23 @@ nav ul li a:hover::after{
 }
 
 .contact-left p i{
-    color: #bd0a16;
+    color: #2a71f5;
     margin-right: 15px;
     font-size: 25px;
 }
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.btn:hover {
+    background-color: #0056b3;
+}
+
 .social-icons{
     margin-top: 30px;
 }
@@ -282,14 +298,14 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #b90814;
+    color: #2a71f5;
     transform: translateY(-5px);
 }
 .btn{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #911F27;
+    border: 1px solid #2a71f5;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
@@ -297,13 +313,13 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .btn:hover{
-    background: #b72f38;
+    background: #325ba7;
     transform: translateY(-5px);
 }
-.btn,btn2{
+.btn, .btn2{
     display: inline-block;
-    background: #e83743;
-    background-color:#b91721;
+    background: #2a71f5;
+    background-color:#2a71f5;
     
 }
 .contact-right form{
@@ -366,7 +382,7 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: #911F27;
+        background: #2a71f5;
         position: fixed;
         top: 0;
         right: -200px;

@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3b108a2933.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Blue_.png" class="logo" alt="Logo">
+                <div style="justify-content: right;">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+            <div class="header">
+                <p>Crafting Interactive <span>Web Experiences</span></p>
+                <h1>I'm <span>Tamil</span><br>Kumaran..!</h1>
+                <h3>Front-End Developer | Problem Solver | Tech Enthusiast</h3>
+                <img src="profile.jpg" alt="Profile Photo" class="profile-photo">
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------- About -------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="mee.jpg" alt="My Photo">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>
+                        I'm a passionate Front-End Developer with a strong foundation in problem-solving and web development. 
+                        Seeking a challenging internship/full-time position to leverage my skills and contribute to the growth of an innovative organization.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>
+                                <img src="/icons/cpp.png" alt="C++" class="icons">
+                                <img src="/icons/c.png" alt="C" class="icons">
+                                <img src="/icons/python.png" alt="Python" class="icons">
+                                <img src="/icons/java.png" alt="Java" class="icons">
+                            </li>
+                            <li><span>Front-End Development</span><br>
+                                <img src="/icons/react.png" alt="React" class="icons">
+                                <img src="/icons/htmll.png" alt="HTML" class="icons">
+                                <img src="/icons/css.png" alt="CSS" class="icons">
+                                <img src="/icons/js.png" alt="JavaScript" class="icons">
+                            </li>
+                            <li><span>Back-End Development</span> <br>
+                                <img src="/icons/mongodb.png" alt="MongoDB" class="icons">
+                                <img src="/icons/sql.png" alt="SQL" class="icons">
+                                <img src="/icons/node.png" alt="Node.js" class="icons">
+                            </li>
+                            <li><span>Tools & Technologies</span> <br>
+                                <img src="/icons/git.png" alt="Git" class="icons">
+                                <img src="/icons/github.png" alt="GitHub" class="icons">
+                                <img src="/icons/vscode.png" alt="VS Code" class="icons">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BE CCE</span><br>Sri Eshwar College of Engineering, Coimbatore<br><b>CGPA: 8.2</b></li>
+                            <li><span>HSC</span><br>Chanakya Matriculation Higher Secondary School, Tindivanam<br><b>87%</b></li>
+                            <li><span>SSLC</span><br>Chanakya Matriculation Higher Secondary School, Tindivanam<br><b>98%</b></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------- Portfolio --------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Software</h2>
+                    <ul>
+                        <li>
+                            Developed a range of software applications, including an <b>Automotive E-commerce Web</b> store and a feature-rich <b>Chess Game</b>, both utilizing the <b>MERN stack</b> (MongoDB, Express.js, React.js, Node.js).
+                        </li>
+                        <li>
+                            The e-commerce platform provides an attractive and user-friendly interface for customers to browse and purchase automotive products, such as bikes and car accessories.
+                        </li>
+                        <li>
+                            The chess game incorporates intuitive interfaces, user authentication, and an opponent with randomized moves to create an engaging gaming experience.
+                        </li>
+                        <li>
+                            These projects highlight strong skills in front-end and back-end development, ensuring seamless functionality and user interaction.
+                        </li>
+                    </ul>
+                    <a href="https://github.com/Tamilkumaran17" target="_blank">Learn more</a>
+                    <img src="project1.jpg" alt="E-commerce Project Screenshot" class="project-image">
+                    <img src="project2.jpg" alt="Chess Game Screenshot" class="project-image">
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Hardware</h2>
+                    <ul>
+                        <li>
+                            Created an IoT-based temperature and humidity monitoring system using the ESP8266 microcontroller and DHT11 sensor.
+                        </li>
+                        <li>
+                            The system integrates with Google Sheets for data storage and the Blynk app for real-time visualization and alerts, including email notifications for specific conditions.
+                        </li>
+                        <li>
+                            A buzzer is included to signal high or low threshold alerts, and power consumption was optimized for long-term deployment in various environments.
+                        </li>
+                        <li>
+                            This project showcases expertise in hardware integration, sensor technology, and IoT systems.
+                        </li>
+                    </ul>
+                    <a href="#">Learn more</a>
+                    <img src="project3.jpg" alt="IoT Project Screenshot" class="project-image">
+                </div>
+                <div>
+                    <i class="fa-regular fa-star"></i>
+                    <h2>Achievements</h2>
+                    <ul>
+                        <li>
+                            Active participant and achiever on competitive programming platforms like <b>LeetCode, CodeChef, and HackerRank</b>, demonstrating strong problem-solving skills and coding proficiency.
+                        </li>
+                        <li>
+                            Completed certifications from platforms such as Udemy and NPTEL, covering diverse topics like programming languages and web development.
+                        </li>
+                        <li>
+                            These achievements showcase my commitment to continuous learning and proficiency in various domains of computer science and technology.
+                        </li>
+                    </ul>
+                    <a href="https://leetcode.com/tamizh_17/" target="_blank">LeetCode |</a>
+                    <a href="https://www.codechef.com/users/tamilkumaran" target="_blank">CodeChef |</a>
+                    <a href="https://www.hackerrank.com/profile/tamizh17" target="_blank">HackerRank |</a>
+                    <a href="https://drive.google.com/drive/folders/1msI5e0B0iMXV7UxxZLnfZeZFhmmkifP7?usp=sharing" target="_blank">Certifications</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- Contact ------------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> tamilkumaran1494@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9025015881</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/Tamilkumaran17" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tamilkumaran17/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="/resume/Tamilkumaran_Resume.pdf" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+
+</html>
