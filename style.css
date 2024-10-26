@@ -196,6 +196,7 @@ nav ul li a:hover::after{
     width: 50px;
     height: 50px;
     transition: .3s ease-out;
+    margin-right: 2%;
 }
 .icons:hover{
     cursor: pointer;
@@ -429,6 +430,8 @@ nav .fa-solid{
     }
     .about-col2{
         font-size: 14px;
+    }.icons{
+        margin-right: 2.4%;
     }
     .contact-left , .contact-right{
         flex-basis: 100%;
