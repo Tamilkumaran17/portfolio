@@ -1,3 +1,20 @@
+const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+// Check for saved theme preference
+if (localStorage.getItem('theme') === 'black-and-white') {
+    body.classList.add('black-and-white');
+}
+
+// Toggle theme and save preference
+themeToggle.addEventListener('click', () => {
+    body.classList.toggle('black-and-white');
+    const currentTheme = body.classList.contains('black-and-white') ? 'black-and-white' : 'default';
+    localStorage.setItem('theme', currentTheme);
+});
+
+
+
 var tablinks=document.getElementsByClassName("tab-links");
 var tabcontents=document.getElementsByClassName("tab-contents");
 function opentab(tabname){
