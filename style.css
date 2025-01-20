@@ -155,8 +155,10 @@ nav ul li a:hover::after{
     font-weight: 500;
     cursor: pointer;
     position: relative;
+    color: white;
 
 }
+
 .tab-links::after{
     content: '';
     width: 0;
