@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="foat.css">
     <link rel="icon" type="image/x-icon" href="icons/logo.png">
     <script src="https://kit.fontawesome.com/3b108a2933.js" crossorigin="anonymous"></script>
 </head>
@@ -36,7 +37,9 @@
                 
             </nav>
             <div class="header">
-                <p>Front-end <span>Developer</span></p>
+                <p id="typing" data-text="Front-end Developer"></p>
+                <p id="typing" data-text="Front-end Developer"></p>
+                
                 <h1>I'm <span>Tamil</span><br>Kumaran..!</h1>
             </div>
         </div>
@@ -47,7 +50,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col1">
-                    <img src="mee.jpg" alt="My Photo">
+                    <img src="Tamil Kumaran blazer photo.JPG" alt="My Photo">
                 </div>
                 <div class="about-col2">
                     <h1 class="sub-title">About Me</h1><br>
@@ -61,10 +64,10 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li><span>Problem Solving</span><br> 
-                                <img src="/icons/cpp.png" alt="react" class="icons">
-                                <img src="/icons/c.png" alt="react" class="icons">
-                                <img src="/icons/python.png" alt="react" class="icons">
-                                <img src="/icons/java.png" alt="react" class="icons">
+                                <img src="/icons/cpp.png" alt="cpp" class="icons" title="cpp">
+                                <img src="/icons/c.png" alt="c" class="icons" title="c">
+                                <img src="/icons/python.png" alt="python" class="icons" title="python">
+                                <img src="/icons/java.png" alt="java" class="icons" title="java">
                                 
                                 <!-- Proficient in C++, C, Python, Java, SQL (Basic), MongoDB -->
                             </li>
@@ -72,16 +75,18 @@
                             <li><span>Web Development</span><br> Skilled in React.js, HTML, CSS, JavaScript</li> -->
 
                             <li><span>Front-end </span><br>
-                                <img src="/icons/react.png" alt="react" class="icons">
-                                <img src="/icons/htmll.png" alt="react" class="icons">
-                                <img src="/icons/css.png" alt="react" class="icons">
-                                <img src="/icons/js.png" alt="react" class="icons">
+                                
+                                <img src="/icons/react.png" alt="react" class="icons" title="react">
+                                <img src="/icons/htmll.png" alt="html" class="icons" title="html">
+                                <img src="/icons/css.png" alt="css" class="icons" title="css">
+                                <img src="/icons/js.png" alt="javaScript" class="icons" title="javaScript">
                             </li>
 
                             <li><span>Back-end</span> <br>
-                                <img src="/icons/mongodb.png" alt="react" class="icons">
-                                <img src="/icons/sql.png" alt="react" class="icons">
-                                <img src="/icons/node.png" alt="react" class="icons">
+                                <img src="/icons/mongodb.png" alt="mongodb" class="icons" title="mongodb">
+                                <img src="/icons/node.png" alt="node" class="icons" title="node">
+                                <img src="/icons/sql.png" alt="sql" class="icons" title="sql">
+
                             </li>
             
                         </ul>
@@ -120,7 +125,7 @@
                     These projects highlight strong skills in front-end and back-end development, ensuring seamless functionality and user interaction.
                 </li>
             </ul>
-            <a href="https://github.com/Tamilkumaran17" target="_blank">Learn more</a>
+            <a href="https://github.com/Tamilkumaran17/Automotive-Frontend" target="_blank">Learn more</a>
         </div>
         <div>
             <i class="fa-solid fa-code"></i>
@@ -139,7 +144,7 @@
                     This project showcases expertise in hardware integration, sensor technology, and IoT systems.
                 </li>
             </ul>
-            <a href="#">Learn more</a>
+            <a href="https://github.com/Tamilkumaran17/TempSense" target="_blank">Learn more</a>
         </div>
         <div>
             <i class="fa-regular fa-star"></i>
@@ -181,7 +186,7 @@
                         <!-- <a href="https://drive.google.com/file/d/1HhJJiOeMWM1L5GXqF9fBVb0qA6XhrMr2/view?usp=sharing" target="_blank"><i class="fa-regular fa-file"></i></a> -->
                     </div>
                     <div id="download-cv">
-                        <a href="/Tamizh_resume.pdf" download class="btn">Download CV</a>
+                        <a href="/Tamizh_resume.pdf" download class="btn"><span>Download CV</span> <div class="liquid"></div> </a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -189,7 +194,7 @@
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="2" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        <button type="submit" class=" btn2">Submit</button>
                         <span id="msg"></span>
                     </form>
                 </div>
@@ -204,5 +209,6 @@
     <script src="fluid.js"></script>
     <script src="script.js"></script>
     <script src="sheet.js"></script>
+    <script src="typing.js"></script>
 </body>
 </html>

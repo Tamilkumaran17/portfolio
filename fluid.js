@@ -22,7 +22,7 @@ class Particle {
 
         this.radius = Math.random() * 5 + 2;
 
-        this.color = `rgb(38, 38, 38)`;
+        this.color = `rgb(40, 39, 39)`;
     }
 
     update() {
