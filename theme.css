@@ -25,6 +25,7 @@ body {
   }
   
   .theme-switch {
+    border: 2px solid black;
     position: relative;
     display: inline-block;
     width: 60px;
@@ -32,7 +33,8 @@ body {
   }
   
   .theme-switch input {
-    display: none;
+
+    border:2px solid #000000;
   }
   
   .slider {

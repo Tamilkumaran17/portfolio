@@ -1,20 +1,3 @@
-const themeToggle = document.getElementById('theme-toggle');
-const body = document.body;
-
-// Check for saved theme preference
-if (localStorage.getItem('theme') === 'black-and-white') {
-    body.classList.add('black-and-white');
-}
-
-// Toggle theme and save preference
-themeToggle.addEventListener('click', () => {
-    body.classList.toggle('black-and-white');
-    const currentTheme = body.classList.contains('black-and-white') ? 'black-and-white' : 'default';
-    localStorage.setItem('theme', currentTheme);
-});
-
-
-
 var tablinks=document.getElementsByClassName("tab-links");
 var tabcontents=document.getElementsByClassName("tab-contents");
 function opentab(tabname){
@@ -37,3 +20,20 @@ var sidemen = document.getElementById("sidemenu");
             function closemenu(){
                 sidemen.style.right="-200px"
             }
+
+
+const themeToggle = document.getElementById('themetoggle');
+const body = document.body;
+
+themeToggle.addEventListener('change', ()=>{
+    if(themeToggle.checked)
+    {
+        body.classList.remove('light-theme');
+        body.classList.add('dark-theme');
+    }
+    else
+    {
+        body.classList.remove('dark-theme');
+        body.classList.add('light-theme');
+    }
+});
