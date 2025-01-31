@@ -281,12 +281,14 @@ nav ul li a:hover::after{
 /**----------------services--------------*/
 #services{
     padding: 30px 0;
+    
 }
 .services-list{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 20px;
+    /* border: 2px solid white; */
 
 }
 .services-list div{
@@ -320,12 +322,64 @@ nav ul li a:hover::after{
     background: #2a71f5;
     transform: translateY(-10px);
 }
+.services-list div img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area and maintains its aspect ratio */
+}
+
+
+
+.hosts{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,1fr));
+    grid-gap: 40px;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    padding: 10px;
+}
+
+.hosts .projects{
+
+    background:transparent;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition:  0.3s ease-out;
+    /* margin-left: 70px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+}
+
+.hosts .projects:hover{
+    transform: translateY(-10px);
+}
+
+.hosts .projects img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.hosts .projects h4{
+    font-size: 15px;
+}
 
 /*-------------portpolio-------------*/
 
 
 #portfolio{
     padding: 50px 0;
+    /* border: 2px solid rgb(167, 30, 52); */
 }
 
 /*-------------------contect----------------------*/
@@ -599,6 +653,24 @@ nav .fa-solid{
     .contact-left , .contact-right{
         flex-basis: 100%;
     }
+    .services-list {
+        display: grid;
+        /* grid-template-columns: 1fr; Stack images in a single column */
+        /* grid-gap: 20px; */
+    }
+    .hosts{
+    grid-template-columns: repeat(2,minmax(10px,.5fr));
+    align-items: center;
+    margin-left: -40px;
+    
+
+    }
+
+    .services-list div img {
+        width: 100%; /* Ensure the image takes full width on smaller screens */
+        height: auto;
+    }
+    
 
      
 
