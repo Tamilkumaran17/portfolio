@@ -319,8 +319,9 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: #2a71f5;
+    background: rgb(42, 113, 245);
     transform: translateY(-10px);
+    box-shadow: rgb(92, 144, 241) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .services-list div img {
     width: 100%;
@@ -579,6 +580,7 @@ form .btn2{
     height: 100vh; 
     z-index: -1;  
     pointer-events: none; 
+
 }
 
 
