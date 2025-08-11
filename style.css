@@ -114,7 +114,7 @@ nav ul{
     padding: 0;
     margin-top: -10px;
     margin-bottom:60px ;
-    margin-left: 800px;
+    margin-left: 750px;
     
 }
 .logo{
@@ -137,6 +137,13 @@ nav ul li a{
     text-decoration: none;
     font-style: 18px;
     position: relative; 
+
+}
+nav ul li a:hover{
+
+    color: #469cf8;
+    transition: .2s ease-in;
+     
 
 }
 nav ul li a::after{
@@ -201,7 +208,6 @@ nav ul li a:hover::after{
 }
 .about-col1 img{
     width: 100%;
-    /* height: 600px; */
     border-radius: 15px;
 }
 .about-col2{
@@ -222,6 +228,7 @@ nav ul li a:hover::after{
     display: flex;
     margin: 20px 0 40px;
 }
+
 .tab-links{
     margin-right: 50px;
     font-size: 18px;
@@ -230,6 +237,11 @@ nav ul li a:hover::after{
     position: relative;
     color: white;
 
+}
+
+.tab-links:hover{
+    color: #469cf8;
+    transition: .2s ease-in;
 }
 
 .tab-links::after{
@@ -291,6 +303,9 @@ nav ul li a:hover::after{
     /* border: 2px solid white; */
 
 }
+.services-list .fa-solid,.fa-regular{
+    color: #147ef0;
+}
 .services-list div{
     background: #262626;
     padding: 40px;
@@ -319,9 +334,9 @@ nav ul li a:hover::after{
     display: inline-block;
 }
 .services-list div:hover{
-    background: rgb(42, 113, 245);
+    /* background: rgb(43, 72, 121); */
     transform: translateY(-10px);
-    box-shadow: rgb(92, 144, 241) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    box-shadow: rgb(56, 57, 58) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .services-list div img {
     width: 100%;
@@ -332,10 +347,14 @@ nav ul li a:hover::after{
 
 
 .hosts{
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-left: 55px;
     display: grid;
-    grid-template-columns: repeat(3,minmax(100px,1fr));
-    grid-gap: 40px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3,minmax(150px,1fr));
+    grid-gap: 20px;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -345,13 +364,14 @@ nav ul li a:hover::after{
 
 .hosts .projects{
 
-    background:transparent;
+    /* background:transparent; */
+    /* border-bottom: 1px solid gray; */
     width: 250px;
     height: 250px;
     padding: 40px;
     font-size: 13px;
     font-weight: 300;
-    border-radius: 10px;
+    border-radius: 50px;
     transition:  0.3s ease-out;
     /* margin-left: 70px; */
     align-items: center;
@@ -393,6 +413,8 @@ nav ul li a:hover::after{
 }
 .contact-right{
     flex-basis: 60%;
+    margin-top: 30px;
+
 
 }
 .contact-left p{
@@ -586,7 +608,7 @@ form .btn2{
 
 footer{
     background-color: #262626;
-    font-size: 20px0;
+    font-size: 20px;
     text-align: center;
     padding: 20px;
 }
@@ -615,12 +637,17 @@ nav .fa-solid{
     }
 
     nav ul{
-        background: #2a71f5;
+        
+        
+        background:transparent;
+        backdrop-filter: blur(10px);
+        border: 1px solid  #3b3c3c;
+        border-bottom-left-radius: 10px;
         position: fixed;
         top: 0;
         right: -200px;
-        width: 200px;
-        height: 100vh;
+        width:150px;
+        height: 310px;
         padding-top: 50px;
         z-index:2;
         transition: right .5s;
@@ -628,14 +655,15 @@ nav .fa-solid{
     }
 
     nav ul li{
-        text-align: center;
+        justify-content: flex-start;
+        text-align: start;
         display: block;
-        margin: 25px;
+        margin: 25px 50px;
     }
     nav ul .fa-solid{
         position: absolute;
         top: 25px;
-        left: 25px;
+        right: 10px;
         cursor: pointer;
     }
     .sub-title{

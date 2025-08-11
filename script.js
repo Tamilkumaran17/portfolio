@@ -1,11 +1,12 @@
-var tablinks=document.getElementsByClassName("tab-links");
-var tabcontents=document.getElementsByClassName("tab-contents");
-function opentab(tabname){
-    for(tablink of tablinks){
-        tablink.classList.remove("active-link")
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
     }
-    for(tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab")
+    for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
     }
 
     event.currentTarget.classList.add("active-link");
@@ -14,27 +15,34 @@ function opentab(tabname){
 
 var sidemen = document.getElementById("sidemenu");
 
-            function openmenu(){
-                sidemen.style.right = "0";
-            }
-            function closemenu(){
-                sidemen.style.right="-200px"
-            }
+function openmenu() {
+    sidemen.style.right = "0";
+    document.addEventListener("click", handleOutsideClick);
+}
 
+function closemenu() {
+    sidemen.style.right = "-200px";
+    document.removeEventListener("click", handleOutsideClick);
+}
 
+function handleOutsideClick(event) {
+    // if click is outside sidemenu and not on the hamburger icon
+    const clickedInside = sidemen.contains(event.target) || event.target.closest(".fa-bars");
+    if (!clickedInside) {
+        closemenu();
+    }
+}
+
+// Theme toggle
 const themeToggle = document.getElementById('themetoggle');
 const body = document.body;
 
-themeToggle.addEventListener('change', ()=>{
-    if(themeToggle.checked)
-    {
+themeToggle.addEventListener('change', () => {
+    if (themeToggle.checked) {
         body.classList.remove('light-theme');
         body.classList.add('dark-theme');
-    }
-    else
-    {
+    } else {
         body.classList.remove('dark-theme');
         body.classList.add('light-theme');
     }
 });
-
